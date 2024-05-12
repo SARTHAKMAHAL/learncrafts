@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>video playlist</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+    <img src="https://img.freepik.com/premium-vector/cl-initials-logo-design-initial-letter-logo-creative-luxury-logo-template_773552-152.jpg", height="90",width="90">
+      <a href="index.html" class="logo">LearnCraft</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="search-btn" class="fas fa-search"></div>
+       
+
+         <div id="user-btn" class="fas fa-user" onclick="window.location.href='login.html';"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Student Profile</h3>
+         <p class="role">student</p>
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="https://cdn.kibrispdr.org/data/104/download-logo-graduation-19.png" class="image" alt="">
+      <h3 class="name">Student Profile</h3>
+      <p class="role">student</p>
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>About</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Contact us</span></a>
+   </nav>
+
+</div>
+
+<section class="playlist-details">
+
+   <h1 class="heading">playlist details</h1>
+
+   <div class="row">
+
+      <div class="column">
+         <form action="" method="post" class="save-playlist">
+            <button type="submit"><i class="far fa-bookmark"></i> <span>save playlist</span></button>
+         </form>
+   
+         <div class="thumb">
+            <img src="data:image/png;base64,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" alt="">
+            <span>06 videos</span>
+         </div>
+      </div>
+      <div class="column">
+         <div class="tutor">
+            <img src="https://img.freepik.com/premium-vector/cute-male-teacher-cartoon-character_297344-98.jpg" alt="">
+            <div>
+               <h3>Mrs.Isha</h3>
+               <span>02-16-2024</span>
+            </div>
+         </div>
+   
+         <div class="details">
+            <h3>complete React tutorial</h3>
+            <p>Learn React from scratch with this comprehensive playlist tutorial! Covering fundamental concepts like variables, loops, functions, and classes, each video dives deep into essential programming techniques. From basic syntax to advanced topics like pointers and memory management, this playlist equips you with the skills to build robust React applications. Start your coding journey today and master one of the most powerful programming languages with ease!</p>
+            <a href="teacher_profile.html" class="inline-btn">view profile</a>
+         </div>
+      </div>
+   </div>
+
+</section>
+
+<section class="playlist-videos">
+
+   <h1 class="heading">playlist videos</h1>
+
+   <div class="box-container">
+
+      <a class="box" href="https://youtu.be/QFaFIcGhPoM?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3">
+         <i class="fas fa-play"></i>
+         <img src="data:image/png;base64,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" alt="">
+         <h3>complete React tutorial (part 01)</h3>
+      </a>
+
+      <a class="box" href="https://youtu.be/9hb_0TZ_MVI?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3">
+         <i class="fas fa-play"></i>
+         <img src="data:image/png;base64,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" alt="">
+         <h3>complete React tutorial (part 02)</h3>
+      </a>
+
+      <a class="box" href="https://youtu.be/9VIiLJL0H4Y?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3">
+         <i class="fas fa-play"></i>
+         <img src="data:image/png;base64,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" alt="">
+         <h3>complete React tutorial (part 03)</h3>
+      </a>
+
+      <a class="box" href="https://youtu.be/Y2hgEGPzTZY?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3">
+         <i class="fas fa-play"></i>
+         <img src="data:image/png;base64,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" alt="">
+         <h3>complete React tutorial (part 04)</h3>
+      </a>
+
+      <a class="box" href="https://youtu.be/Cla1WwguArA?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3">
+         <i class="fas fa-play"></i>
+         <img src="data:image/png;base64,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" alt="">
+         <h3>complete React tutorial (part 05)</h3>
+      </a>
+
+      <a class="box" href="https://youtu.be/lnV34uLEzis?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3">
+         <i class="fas fa-play"></i>
+         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATUAAACjCAMAAADciXncAAAAXVBMVEX///9h2vtR1/pa2ftX2Pv7/f7Z9P3h9v32/P5k2vpM1vq67Pzq+f2D4PuS4/vv+v3I8Px43vud5fup6Pym6PzN8f2x6vyN4vvd9f183/vA7vzS8v3J8PyY5Ptu2/rVJ4mKAAAGW0lEQVR4nO2daZPqKhCGDWAWXDJxi8uR//8zjzRkD5k7XXc8Gt/ny0wZtJKupjeasFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfoskjuNz+pPR8X8ePVPiUliUyHa3bwfnp8IOFUKb1RPu7VVJN0JGHimi03Jq8O2iZT1ayeOzbvLVSFQtBS+4fVBuNyO6g/Xhmbf6OuTCC6utQtfRoeuLqEVbjRb7J9/va5C5h4/K3bYQldqJYj0cudf+6sP+be53r3Y6fv49/3NOijTHOYHlrfSSkbpv6ddGeYlmq5w+yUunek++4xdgSQ+eNYYsPXjLJTYd63b14hSXlm7t7bfV53nSlVUgnbc/Su/aqVvUmqV3p1Yq687HjRVl9pQ7fSWMFU/fDyaZm4y6iiuWhf/g1BtJrkScn3Cjr4R76nzw+cGpmzdueUSzU5mhi7DKJj/NjX5ZHSpGLsTOm4rd4//EzU76v8+f0A/MmUNQVVLjxLZdxF7vvkaH2Yvid2/y5bATTAWyIhdXqI1yUW0yPioaeJP5Y52BGAloCYornEmTWajAcXlcFx8W6FqR6GDFZ6Wr/MkEM9Ot1dbRyTtfrFh0+PKXTxQ24SHWMqrxtHW2fGPL115qE6HF3vqTD5OamJRaWlVBRDhp+kSpTetaVteOdLD6ePhAqYkpu2bd48N7unpQIPBY7D7QrmUT0dbd5Z6Lg4vbAp62tFL7frFhVhR2ho6r0YqEZXPUkkpw5se/MFvCucGZYjVN5YzCTlJVjv7CJ+YGZMvHHGRK01O48HU54Ui/ifhmiS1KyrFaBqlXfWWtQx5hLT6wLBnbh74MPz+Q0JoLRxKbHA60laKp1GGWUFVyKIx4ICQnxqF49p9YlaT0fVD0WLo6xy1Pzmfb0HFO1mlBpm0QmJE7+fOkm30ZNr2SRZ58rQ6FX45q44sfu9M1bgt5VOqzh2YYGf318VQaoYVq1uBHkFIprbPN4UoNSOvxGT53bvaxzfGhXt+Iqy88KUS2XZHQP80ZLFwmGqmwvOSELN210XhvziR7E5DJw5LJLDPF5bLZXC6FyaQSIiS/7Z/J5q1ZkRyijhweJktoSb4yyvJhsr5MqSckykzf+Emly4/wo8tVpxPtITD5sPBJSusAPv0cYmhsaj3H1ojuD6jd3F1pvhOqY6DuN5+Ak3dQYzmWhTKrKmVYnlddK6cvc64Y5feqEc3qGP2po3t3IfjVvRW2qGajaxiUtc5JYWYrt6rVypqjzTU9WkFU+beTysSjU49gFaBR7l8s4paBFMUsa21HqaoJVVyt66MONl9XzGkGjhfSHJTuK9+ERA1JFHec76r+2fsvP8E/wLc3RkrUxpvagg71v5GY3EdQkrcgK0hWrq5IXiv3IqOZdWb5lqpHVNtqRKO+Ipp0TpH6PWpdUsqhKB2wiUG7nyiump0H3alvjW+pkr3mPVHZMjNwBcddYUy5ale4KWijRj9r47rtpbGZaNp6UxLXtiHK3hS8S2fMrrX4PCtFqZaUuv0VcgjGa2a/SeTq+95mY9yqOGGwuFI9fq9+u2h2Fzy+1bQNHYWLPrZyzHOkF7fiMD3P3wdKOaUZWU/KyBe6xuakO75GNzpI5bdsqQNBils/nck2hFN4VZMuGZLdtv6w7OXqTffumRxCEYyHfQPX//4E/wBSjcBqUlr1qbVWNm+iK7T23N3UycD4PDzNZhvCaapWXelVa5HPRH2aybuupBxqGJzNNgQ7oQYbCyrOXrGaALcWTEvZmm9vfTwbyiLyVr7xziwDGws8pq9qVzWQWtTYRC/TsFzK0Jr+e/HNGvmX6qqaW//sK1sz3ilbeJ9BcE3/vbBzcGpZRPQm3G5Earqpc7vcK9y2Zgsp8v0jXegaB9g1FvChHBCvcUBuwAJ5KAtX88hQ8/gRqK+xQC2XBdYNWGCNigfWQ1lg7Z0H+jxYoKeIB/rXeKBXkgn6cpmgB5wJ9hswwN4WDthHxQF79jhgfygD7EXmgH3vHPCOBQ54nwcHvDuGA95TxAHvxOKA969xwLv+OOC9khzwDlMOeF8uB1okwLuZfwjeA84B75zngPMNOOAsDQ6hc1t2OLdlCpwRxAHnUXHA2WcscM4eC5zpyAHnh7LAWbUscC4yD5zBzQTnvQMAAAAAAAAAAAAAAAAAAAAAAAAAAPBK/AUU8l0rkS4qsgAAAABJRU5ErkJggg==" alt="">
+         <h3>complete React tutorial (part 06)</h3>
+      </a>
+
+   </div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+    &copy;   2024 by <span>Learn Craft</span> 
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+   
+</body>
+</html>

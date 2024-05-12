@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>video playlist</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+    <img src="https://img.freepik.com/premium-vector/cl-initials-logo-design-initial-letter-logo-creative-luxury-logo-template_773552-152.jpg", height="90",width="90">
+      <a href="index.html" class="logo">LearnCraft</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+      <div class="icons">
+         <div id="search-btn" class="fas fa-search"></div>
+         
+
+         <div id="user-btn" class="fas fa-user" onclick="window.location.href='login.html';"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Student Profile</h3>
+         <p class="role">student</p>
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="https://cdn.kibrispdr.org/data/104/download-logo-graduation-19.png" class="image" alt="">
+      <h3 class="name">Student Profile</h3>
+      <p class="role">student</p>
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>About</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Contact us</span></a>
+   </nav>
+
+</div>
+
+<section class="playlist-details">
+
+   <h1 class="heading">playlist details</h1>
+
+   <div class="row">
+
+      <div class="column">
+         <form action="" method="post" class="save-playlist">
+            <button type="submit"><i class="far fa-bookmark"></i> <span>save playlist</span></button>
+         </form>
+   
+         <div class="thumb">
+            <img src="https://ih1.redbubble.net/image.523774428.2277/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg" alt="">
+            <span>06 videos</span>
+         </div>
+      </div>
+      <div class="column">
+         <div class="tutor">
+            <img src="https://img.freepik.com/premium-vector/cute-male-teacher-cartoon-character_297344-98.jpg" alt="">
+            <div>
+               <h3>Mrs.Nikita</h3>
+               <span>01-04-2024</span>
+            </div>
+         </div>
+   
+         <div class="details">
+            <h3>complete Ruby tutorial</h3>
+            <p>Learn Ruby from scratch with this comprehensive playlist tutorial! Covering fundamental concepts like variables, loops, functions, and classes, each video dives deep into essential programming techniques. From basic syntax to advanced topics like pointers and memory management, this playlist equips you with the skills to build robust Ruby applications. Start your coding journey today and master one of the most powerful programming languages with ease!</p>
+            <a href="teacher_profile.html" class="inline-btn">view profile</a>
+         </div>
+      </div>
+   </div>
+
+</section>
+
+<section class="playlist-videos">
+
+   <h1 class="heading">playlist videos</h1>
+
+   <div class="box-container">
+
+      <a class="box" href="https://youtu.be/ml5sNqftiK4?list=PLS1QulWo1RIbNBXZAeVbkkHEj9zsEbXQK">
+         <i class="fas fa-play"></i>
+         <img src="https://ih1.redbubble.net/image.523774428.2277/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg" alt="">
+         <h3>complete Ruby tutorial (part 01)</h3>
+      </a>
+
+      <a class="box" href="https://youtu.be/aKmN_i8Cy28?list=PLS1QulWo1RIbNBXZAeVbkkHEj9zsEbXQK">
+         <i class="fas fa-play"></i>
+         <img src="https://ih1.redbubble.net/image.523774428.2277/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg" alt="">
+         <h3>complete Ruby tutorial (part 02)</h3>
+      </a>
+
+      <a class="box" href="https://youtu.be/DQeq4RqM5yg?list=PLS1QulWo1RIbNBXZAeVbkkHEj9zsEbXQK">
+         <i class="fas fa-play"></i>
+         <img src="https://ih1.redbubble.net/image.523774428.2277/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg" alt="">
+         <h3>complete Ruby tutorial (part 03)</h3>
+      </a>
+
+      <a class="box" href="https://youtu.be/1MjgnFafTqU?list=PLS1QulWo1RIbNBXZAeVbkkHEj9zsEbXQK">
+         <i class="fas fa-play"></i>
+         <img src="https://ih1.redbubble.net/image.523774428.2277/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg" alt="">
+         <h3>complete Ruby tutorial (part 04)</h3>
+      </a>
+
+      <a class="box" href="https://youtu.be/noUaGvexdok?list=PLS1QulWo1RIbNBXZAeVbkkHEj9zsEbXQK">
+         <i class="fas fa-play"></i>
+         <img src="https://ih1.redbubble.net/image.523774428.2277/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg" alt="">
+         <h3>complete Ruby tutorial (part 05)</h3>
+      </a>
+
+      <a class="box" href="https://youtu.be/mPdD8ms5gEQ?list=PLS1QulWo1RIbNBXZAeVbkkHEj9zsEbXQK">
+         <i class="fas fa-play"></i>
+         <img src="https://ih1.redbubble.net/image.523774428.2277/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg" alt="">
+         <h3>complete Ruby tutorial (part 06)</h3>
+      </a>
+
+   </div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+    &copy;   2024 by <span>Learn Craft</span> 
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+   
+</body>
+</html>
